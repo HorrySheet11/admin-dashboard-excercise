@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+}
+
+.dashboard {
+  background-color: rgb(16, 162, 252);
+  grid-row: 1/-1;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/3;
+}
+
+.content {
+  background-color: rgb(197, 195, 195);
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.empty {
+  opacity: 0;
+}
+
+.dashboard > h1 {
+  margin-top: 0;
+}
+
+span > h3, span > h1{
+  display: inline-block;
+}
+span{
+    display:block
+}
+
+i{
+    font-size:30px;
+}
