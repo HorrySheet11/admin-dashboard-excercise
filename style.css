@@ -10,6 +10,7 @@ html {
 }
 
 body {
+
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 150px 1fr;
@@ -58,8 +59,8 @@ body {
     gap: 10px;
     .cards-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
-      grid-template-rows: repeat(auto-fill, minmax(200px ,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(160px, 1fr));
       gap: 20px;
     }
   }
@@ -89,7 +90,7 @@ body {
     overflow-y: auto;
     div > div {
       border-bottom: none !important;
-      margin:5px 0;
+      margin: 5px 0;
     }
   }
 }
@@ -240,4 +241,25 @@ img {
     font-family: inherit;
     font-weight: bold;
   }
+}
+
+
+
+.fa-sitemap {
+  transform: rotate(180deg);
+  
+
+}
+
+.fa-sitemap::before{
+  margin-left: 10px;
+  margin-right:0 !important;
+}
+
+.card-buttons {
+  display: flex;
+  margin-top: 10px;
+  color: rgb(71, 71, 71);
+  font-size: 1.2em;
+  justify-content: flex-end;
 }
